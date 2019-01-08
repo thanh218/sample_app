@@ -39,4 +39,13 @@ en:
     new:
       title1: "Sign up"
       content1: "This will be a signup page for new users."
-    
+      content2: "Confirmation"
+      content3: "Create my account"
+  shared:
+    error_messages:
+      content1: "error"
+      content2: " The form contains"
+  controllers:
+    users_controller: 
+      content1: "Welcome to the Sample App!"
+      content2: "error"      
