@@ -7,6 +7,8 @@ gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "3.3.7"
 gem "coffee-rails", "~> 4.2"
 gem "config"
+gem "carrierwave","1.2.2"
+gem "mini_magick","4.7.0"
 gem "faker", "~> 1.6", ">= 1.6.6"
 gem "figaro"
 gem "i18n", " ~> 1.5.1"
@@ -30,3 +32,7 @@ group :development do
   gem "web-console", ">= 3.3.0"
 end
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :production do
+  gem "fog", "1.42"
+end

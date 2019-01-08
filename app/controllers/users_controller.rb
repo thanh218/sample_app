@@ -17,33 +17,35 @@ class UsersController < ApplicationController
 
     if @user.save
       @user.send_activation_email
-      flash[:info] = t ".statusmail"
+      flash[:info] = t ".status_mail"
       redirect_to root_url
     else
-      flash[:notice] = t ".content2"
+      flash[:notice] = t ".erro"
       render :new
     end
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.page(params[:page]).per Settings.microcop_number
+  end
 
   def edit; end
 
   def update
     if @user.update user_params
-      flash[:success] = t ".content1"
+      flash[:success] = t ".content_update"
       redirect_to @user
     else
-      flash[:ranger] = t ".content2"
+      flash[:ranger] = t ".erro"
       render :edit
     end
   end
 
   def destroy
     if @user&.destroy
-    flash[:success] = t ".content4"
+    flash[:success] = t ".content_delete"
     else
-    flash[:danger] = t ".content2"
+    flash[:danger] = t ".erro"
     end
     redirect_to users_url
   end
@@ -58,7 +60,7 @@ class UsersController < ApplicationController
   def logged_in_user
     return if logged_in?
     store_location
-    flash[:danger] = t ".title4"
+    flash[:danger] = t ".title_login"
     redirect_to login_url
   end
 
@@ -74,7 +76,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
 
     return if @user
-    flash[:danger] = t ".content1"
+    flash[:danger] = t ".content"
     redirect_to home_path
   end
 end

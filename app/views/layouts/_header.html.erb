@@ -3,23 +3,23 @@
     <%= link_to "sample app", root_path, id: "logo" %>
     <nar>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t(".menu1"), home_path %></li>
-        <li><%= link_to t(".menu2"), help_path %></li>
+        <li><%= link_to t(".menu_home"), home_path %></li>
+        <li><%= link_to t(".menu_help"), help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to t(".menu3"), users_path %></li>
+          <li><%= link_to t(".menu_user"), users_path %></li>
           <li class="dropdown">
             <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
-            <%= t ".content1" %><b class="caret"></b>
+            <%= t ".content" %><b class="caret"></b>
             <% end %>
             <ul class="dropdown-menu">
-              <li><%= link_to t(".menu4"), current_user %></li>
-              <li><%= link_to t(".menu5"), edit_user_path(current_user) %></li>
+              <li><%= link_to t(".menu_profile"), current_user %></li>
+              <li><%= link_to t(".menu_edit"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
-              <li><%= link_to t(".menu6"), logout_path, method: :delete %></li>
+              <li><%= link_to t(".menu_logout"), logout_path, method: :delete %></li>
             </ul>
           </li>
         <% else %>
-          <li><%= link_to t(".menu7"), login_path %></li>
+          <li><%= link_to t(".menu_login"), login_path %></li>
         <% end %>
       </ul>
     </nar>

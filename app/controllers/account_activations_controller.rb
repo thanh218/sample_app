@@ -5,10 +5,10 @@ class AccountActivationsController < ApplicationController
     if user && !user.activated? && user.authenticated?(:activation, params[:id])
       user.activate
       log_in user
-      flash[:success] = t ".content1"
+      flash[:success] = t ".danger"
       redirect_to user
     else
-      flash[:danger] = t ".content2"
+      flash[:danger] = t ".danger_link"
       redirect_to root_url
     end
   end
