@@ -35,6 +35,15 @@ vi:
   layouts:
     application:
       full_title: "Trang cơ bản về Ruby on rails"
+    header:
+      menu1: "Trang chủ"
+      menu2: "Trợ giúp"
+      menu3: "Tài khoản"
+      menu4: "Hồ sơ tài khoản"
+      menu5: "Cài đặt"
+      menu6: "Đăng xuất"
+      menu7: "Đăng nhập"
+      content1: "Tài khoản"
   users:
     new:
       title1: "Đăng ký"
@@ -49,4 +58,11 @@ vi:
     users_controller: 
       content1: "Chào mừng đến với Sample App!"
       content2: "lỗi"
-
+  sessions:
+    new:
+      title1: "Đăng nhập"
+      content1: "Đăng nhập"
+      login_button: "Đăng nhập"
+      content2: "Tạo tài khoản mới?"
+      link: "Đăng ký ngay!"
+  content1: "Tài khoản hoặc mật khẩu không hợp lệ"
