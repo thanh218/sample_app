@@ -65,4 +65,5 @@ en:
       login_button: "Log in"
       content2: "New user?"
       link: "Sign up now!"
+      remmember: "Remember me on this computer"
   content1: "Invalid email/password combination"
