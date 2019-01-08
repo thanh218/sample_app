@@ -27,6 +27,16 @@ vi:
       link5: http://www.railstutorial.org/book
       link6: http://screencasts.railstutorial.org/
       link7: http://rubyonrails.org/
+    contact:
+      title2: "Ứng dụng mẫu"
+      title1: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
+      content1: "Trang ứng dụng mẫu"
+      link1: "http://www.railstutorial.org/help"  
   layouts:
     application:
       full_title: "Trang cơ bản về Ruby on rails"
+  users:
+    new:
+      title1: "Đăng ký"
+      content1: "Đây là trang đăng ký tài khoản mới"
+
