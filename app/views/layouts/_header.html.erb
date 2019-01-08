@@ -6,14 +6,14 @@
         <li><%= link_to t(".menu1"), home_path %></li>
         <li><%= link_to t(".menu2"), help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to t(".menu3"), "#" %></li>
+          <li><%= link_to t(".menu3"), users_path %></li>
           <li class="dropdown">
             <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
             <%= t ".content1" %><b class="caret"></b>
             <% end %>
             <ul class="dropdown-menu">
               <li><%= link_to t(".menu4"), current_user %></li>
-              <li><%= link_to t(".menu5"), "#" %></li>
+              <li><%= link_to t(".menu5"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li><%= link_to t(".menu6"), logout_path, method: :delete %></li>
             </ul>

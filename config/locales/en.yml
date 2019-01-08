@@ -48,16 +48,37 @@ en:
     new:
       title1: "Sign up"
       content1: "This will be a signup page for new users."
-      content2: "Confirmation"
       content3: "Create my account"
+    form:
+      content2: "Confirmation"
+    edit:
+      title1: "Edit user"
+      title2: "Update your profile"
+      title3: "Confirmation"
+      title4: "Please log in."
+      save: "Save changes"
+      link1: "Change"
+      content3: "Save change"
+    create:
+      content1: "Welcome to the Sample App!"
+      content2: "error" 
+    show:
+      content3: "User not found.Please creat an accout!"
+    update:
+      content1: "Welcome to the Sample App!"
+    destroy:
+      content4: "User deleted"
+      content2: "error"
+    index:
+      title1: "All users"
+    user:
+      content1: "Are you sure?"
+    find:
+      content1: "error" 
   shared:
     error_messages:
       content1: "error"
       content2: " The form contains"
-  controllers:
-    users_controller: 
-      content1: "Welcome to the Sample App!"
-      content2: "error" 
   sessions:
     new:
       title1: "Log in"
