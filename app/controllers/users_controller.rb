@@ -26,6 +26,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @new_relationship = current_user.active_relationships.build 
+    @update_relationship = current_user.active_relationships .find_by followed_id: @user.id
     @microposts = @user.microposts.page(params[:page]).per Settings.microcop_number
   end
 
