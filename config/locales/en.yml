@@ -60,6 +60,7 @@ en:
       link1: "Change"
       content3: "Save change"
     create:
+      statusmail: "Please check your email to activate your account."
       content1: "Welcome to the Sample App!"
       content2: "error" 
     show:
@@ -68,13 +69,10 @@ en:
       content1: "Welcome to the Sample App!"
     destroy:
       content4: "User deleted"
-      content2: "error"
     index:
       title1: "All users"
     user:
       content1: "Are you sure?"
-    find:
-      content1: "error" 
   shared:
     error_messages:
       content1: "error"
@@ -87,4 +85,19 @@ en:
       content2: "New user?"
       link: "Sign up now!"
       remmember: "Remember me on this computer"
+    create:
+      content1: "Invalid email/password combination"
+      content2: "Account not activated.Check your email for the activation link"
+  account_activations:
+    edit:
+      content1: "Account activated!"
+      content2: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      content2: "Account activation"
+      Hi: "Hi"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account"
+      titleh1: "Sample App"
+      active: "Activate"
+  content2: "Account activation"
   content1: "Invalid email/password combination"
