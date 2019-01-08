@@ -85,9 +85,18 @@ en:
       content2: "New user?"
       link: "Sign up now!"
       remmember: "Remember me on this computer"
+      forgotpass: "forgot password"
     create:
       content1: "Invalid email/password combination"
       content2: "Account not activated.Check your email for the activation link"
+  password_resets:
+    new:
+      title1: "Forgot password"
+      submit: "Submit"
+    edit:
+      title1: "Reset password"
+      content1: "Confirmation"
+      content2: "Update password"
   account_activations:
     edit:
       content1: "Account activated!"
@@ -95,9 +104,21 @@ en:
   user_mailer:
     account_activation:
       content2: "Account activation"
+      content3: "Password reset"
       Hi: "Hi"
       welcome: "Welcome to the Sample App! Click on the link below to activate your account"
       titleh1: "Sample App"
       active: "Activate"
+    password_reset:
+      title1: "Password reset"
+      content1: "To reset your password click the link below:"
+      content2: "This link will expire in two hours."
+      content3: "Please ignore this email and your password will stay as it is"
+      content4: "Reset password"
   content2: "Account activation"
   content1: "Invalid email/password combination"
+  passreset: "Email sent with password reset instructions"
+  foundemail: "Email address not found"
+  cannot_be_empty: "can't be empty"
+  content3: "Password has been reset."
+  content4: "Password reset has expired."
