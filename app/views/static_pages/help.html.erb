@@ -1,20 +1,16 @@
-<% provide(:title, "Help") %>
-
-<h1>CHÀO BẠN ĐẾN VỚI TRANG HỖ TRỢ</h1>
+<% provide :title, t(".title2") %>
+<h1><%= t ".content1" %></h1>
 <p>
-
-	<h2 style="color:red">HỖ TRỢ VỀ HỌC RUBY</h2>
-	<br>
-  Nhận trợ giúp về Hướng dẫn Ruby on Rails tại
+  <h2><%= t ".content2" %></h2>
   <br>
-  <a style="color:blue"
-  	
-  href= "http://www.railstutorial.org/help"> Rails Hướng dẫn trang trợ giúp </a>
+  <%= t ".content3" %>
   <br>
-  Để nhận trợ giúp về ứng dụng mẫu này, hãy xem
+  <%= link_to t(".link1"), "http://www.railstutorial.org/help" %><%= t ".content4" %></a>
   <br>
-  <a  style="color:green"href= "http://www.ra Whileutorial.org/book"> <em> Hướng dẫn về Ruby on Rails </ em> 
-  sách </a> .
+  <%= t ".content5" %>
   <br>
-  
+  <%= link_to t(".link2"), "http://www.ra Whileutorial.org/book" %> 
+  <em> <%= t ".content6" %> </ em> 
+  </a> 
+  <br>  
 </p>
