@@ -1,9 +1,16 @@
 <% provide :title, t(".title1") %>
+<div class ="sample jumbotron">
 <h1><%= t ".title"%>.</h1>
 <p>
   <h2 ><%= t ".content1" %></h2>
   <br>
-  <p><%= t ".content2" %></p>
-  <%= link_to t(".link3"), "http://www.railstutorial.org/" %> Ruby on Rails Tutorial </a>
+  <p><%= t ".content2" %><%= link_to t(".link3"), "http://www.railstutorial.org/" %> Ruby on Rails Tutorial </a>
+  </br>
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to image_tag("kitten.jpg", alt: "Kitten") %>
+  </p>
 </p>
+  <%= link_to image_tag("rails.png", alt: "Rails logo"),'http://rubyonrails.org/' %>
+
+</div>
 
