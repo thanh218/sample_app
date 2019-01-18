@@ -39,4 +39,14 @@ vi:
     new:
       title1: "Đăng ký"
       content1: "Đây là trang đăng ký tài khoản mới"
+      content2: "Xác nhận"
+      content3: "Tạo tài khoản"
+  shared:
+    error_messages:
+      content1: "Lỗi"
+      content2: "Đây là form điền vào nội dung"
+  controllers:
+    users_controller: 
+      content1: "Chào mừng đến với Sample App!"
+      content2: "lỗi"
 
