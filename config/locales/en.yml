@@ -35,6 +35,15 @@ en:
   layouts:
     application:
       full_title: "Ruby on Rails Tutorial Sample App"
+    header:
+      menu1: "Home"
+      menu2: "Help"
+      menu3: "Users"
+      menu4: "Profile"
+      menu5: "Settings"
+      menu6: "Log out"
+      menu7: "Log in"
+      content1: "Account"
   users:
     new:
       title1: "Sign up"
@@ -48,4 +57,12 @@ en:
   controllers:
     users_controller: 
       content1: "Welcome to the Sample App!"
-      content2: "error"      
+      content2: "error" 
+  sessions:
+    new:
+      title1: "Log in"
+      content1: "Log in"
+      login_button: "Log in"
+      content2: "New user?"
+      link: "Sign up now!"
+  content1: "Invalid email/password combination"
