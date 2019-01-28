@@ -1,3 +1,7 @@
 name_maximum: 50
 email_maximum: 255
-pass_maximum: 6
+pass_minimum: 6
+sizes: 50
+size_default: 80
+user_number: 15
+one: 1

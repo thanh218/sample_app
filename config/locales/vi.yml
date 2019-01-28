@@ -48,16 +48,34 @@ vi:
     new:
       title1: "Đăng ký"
       content1: "Đây là trang đăng ký tài khoản mới"
-      content2: "Xác nhận"
       content3: "Tạo tài khoản"
+    form:
+      content2: "Xác nhận"
+    edit:
+      title1: "Thay đổi tài khoản"
+      title2: "Cập nhật thông tin"
+      title3: "Xác nhận"
+      title4: "Xin hãy đăng nhập."
+      save: "Lưu"
+      link1: "Thay đổi"
+      content3: "Lưu lại"
+    create:
+      content1: "Chào mừng đến với Sample App!"
+      content2: "lỗi"
+    show:
+      content3: "Tài khoản không tìm thấy. Hãy nhập lại!"
+    update:
+      content1: "Chào mừng đến với Sample App!"
+    destroy:
+      content4: "Tài khoản đã bị xóa"
+    index:
+      title1: "Tất cả tài khoản"
+    user:
+      content1: "Bạn có chắc không?"
   shared:
     error_messages:
       content1: "Lỗi"
       content2: "Đây là form điền vào nội dung"
-  controllers:
-    users_controller: 
-      content1: "Chào mừng đến với Sample App!"
-      content2: "lỗi"
   sessions:
     new:
       title1: "Đăng nhập"
