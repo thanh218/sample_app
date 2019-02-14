@@ -8,11 +8,11 @@ class SessionsController < ApplicationController
       if user.activated?
         user_activated user
       else
-        flash[:warning] = t ".content2"
+        flash[:warning] = t ".content"
         redirect_to root_url
       end
     else
-      flash.now[:danger] = t "content1"
+      flash.now[:danger] = t "erro_account"
       render :new
     end
   end
@@ -26,7 +26,7 @@ class SessionsController < ApplicationController
 
   def user_activated user
     log_in user
-    params[:session][:remember_me] == Settings.one ? remember(user) : forget(user)
+    params[:session][:remember_me] == Settings.remember ? remember(user) : forget(user)
     redirect_back_or user
   end
 end

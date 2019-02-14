@@ -1,5 +1,5 @@
-<% provide :title, t(".title1") %>
-<h1><%= t ".content1" %></h1>
+<% provide :title, t(".title") %>
+<h1><%= t ".title" %></h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -9,7 +9,7 @@
       <%= f.email_field :email, class: "form-control" %>
 
       <%= f.label :password %>
-      <%= link_to t(".forgotpass"), new_password_reset_path %>
+      <%= link_to t(".forgot_pass"), new_password_reset_path %>
       <%= f.password_field :password, class: "form-control" %>
 
       <%= f.label :remember_me, class: "checkbox inline" do %>
@@ -20,6 +20,6 @@
       <%= f.submit t (".login_button"), class: "btn btn-primary" %>
     <% end %>
 
-    <p><%= t ".content2" %><%= link_to t(".link"), signup_path %></p>
+    <p><%= t ".content" %><%= link_to t(".link"), signup_path %></p>
   </div>
 </div>

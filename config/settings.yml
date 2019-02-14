@@ -4,5 +4,11 @@ pass_minimum: 6
 sizes: 50
 size_default: 80
 user_number: 15
-one: 1
-two: 2
+remember: 1
+values_item: 2
+content_maximum: 140
+microcop_number: 10
+page_limit: 10
+size_picturn: 5
+resize_to_limit: [400, 400]
+avt_size: 50

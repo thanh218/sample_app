@@ -1,16 +1,31 @@
-<% provide :title, t(".title1") %>
-<div class ="sample jumbotron">
-<h1><%= t ".title"%>.</h1>
-<p>
-  <h2 ><%= t ".content1" %></h2>
-  <br>
-  <p><%= t ".content2" %><%= link_to t(".link3"), "http://www.railstutorial.org/" %> Ruby on Rails Tutorial </a>
-  </br>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-  <%= link_to image_tag("kitten.jpg", alt: "Kitten") %>
+<% provide :title, t(".title") %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".content_feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class ="sample jumbotron">
+  <h1><%= t ".title" %></h1>
+  <p>
+    <h2 ><%= t ".content" %></h2>
+    <br>
+    <p><%= link_to t(".link"), "http://www.railstutorial.org/" %>
+    </br>
+    <%= link_to t(".sing_up"), signup_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to image_tag("kitten.jpg", alt: "Kitten") %>
+    </p>
   </p>
-</p>
-  <%= link_to image_tag("rails.png", alt: "Rails logo"),'http://rubyonrails.org/' %>
-
-</div>
-
+    <%= link_to image_tag("rails.png", alt: "Rails logo"),"http://rubyonrails.org/" %>
+  </div>
+<% end %>

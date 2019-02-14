@@ -11,6 +11,7 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
   has_secure_password
+  has_many :microposts, dependent: :destroy
 
   def self.digest string
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
@@ -58,7 +59,11 @@ class User < ApplicationRecord
   end
 
   def password_reset_expired?
-    reset_sent_at < Settings.two.hours.ago
+    reset_sent_at < Settings.values_item.hours.ago
+  end
+
+  def feed
+    microposts.order_desc
   end
 
   private
