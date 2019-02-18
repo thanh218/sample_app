@@ -122,3 +122,7 @@ en:
   micropost_question: "You sure?"
   imag_erro: "should be less than 5MB"
   danger: "micropost not delete"
+  button_follow: "Follow"
+  button_unfollow: "Unfollow"
+  follower: "Followers"
+  following: "Following"
